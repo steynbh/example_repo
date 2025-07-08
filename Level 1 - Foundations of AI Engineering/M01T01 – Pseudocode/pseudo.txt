@@ -1,0 +1,72 @@
+Task 1
+request a positive number from the user
+
+if the number is not equal to 0 
+
+	request a positive number from the user
+	
+	store the number
+
+else if the number is equal to 0
+
+	find the largest number 
+
+	print the largest number
+
+Task 2
+
+define first_name as a string variable
+
+request user to enter their name 
+
+store name as variable first_name
+
+print variable first_name with "Hello World"
+
+
+Task 3
+
+
+set integer total to 0
+
+set counter to 0
+
+while there are integers read integer
+
+	add integer to integer total
+
+	set counter to counter plus 1
+
+calculate integer average by dividing integer total by counter
+
+print integer average
+
+
+Task 4
+
+define grocery list item as string variable
+
+read grocery list item
+
+while item has not been bought
+
+	add grocery list item to grocery list
+
+sort grocery list in alphabetical order
+
+print grocery list in alphabetical order
+
+
+Task 5
+
+read X
+read Y
+calculate S as equal to X plus Y
+calculate A as equal to S divided by two
+calculate P as equal to X multiplied by Y
+print S, A, P
+
+
+
+
+
