@@ -9,4 +9,3 @@ house_number = input("What is your house number? ")
 street_name = input("What is your street name? ")
 # print the formatted string with the person's details
 print(f"This is {name} {surname}. He/she is {age} years old and live at {house_number} {street_name}.")
-# This code collects user information and prints a formatted message with their details
