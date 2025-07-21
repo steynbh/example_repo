@@ -33,8 +33,7 @@ if choice.lower() == "investment":
     print(f"Total interest earned: R{total_interest:.2f}")
     
     # if the user enters anything else, print an error message
-    else:
-        print("Invalid choice. Please enter either 'simple' or 'compound'.")
+    
     
 # else if the user types bond or Bond or BOND run the bond calculator
 elif choice.lower() == "bond":
