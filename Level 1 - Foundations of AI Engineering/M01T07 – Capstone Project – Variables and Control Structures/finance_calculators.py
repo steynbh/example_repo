@@ -64,7 +64,7 @@ elif choice.lower() == "bond":
     
     # ask user to input the present value of the house, annual interest rate, and number of months
     present_value = float(input("Please enter the present value of the house (in Rands): "))
-    annual_interest_rate = float(input("Please enter the annual interest rate (as a percentage): ")) / 100
+    annual_interest_rate = float(input("Please enter the annual interest rate (only the percentage number): ")) / 100
     months = int(input("Please enter the number of months to repay the bond: "))
     
     # calculate the monthly interest rate
