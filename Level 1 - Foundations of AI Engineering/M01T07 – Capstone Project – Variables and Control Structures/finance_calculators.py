@@ -19,24 +19,44 @@ if choice.lower() == "investment":
         total_interest = total_amount - principal
         print(f"Total amount after {years} years: R{total_amount:.2f}")
         print(f"Total interest earned: R{total_interest:.2f}")
-
+    # ask user if they want to do another calculation
+        another_calculation = input("Do you want to do another calculation? (yes/no): ").lower()
+        if another_calculation == "yes":
+            # use a loop to move the user back to the start of the program
+            print("Restarting the Finance Calculator...")
+            # restart the program by calling the script again
+            import finance_calculators  # assuming this script is named finance_calculators.py           
+            
     # else if user chooses compound interest calculate the total amount after interest using the formula A = P(1 + r/n)^(nt)
     elif interest == "compound":
         compounding_frequency = int(input("Please enter the number of times interest is compounded per year (e.g., 1 for annually, 4 for quarterly, 12 for monthly): "))
         # calculate the total amount after interest
-    total_amount = principal * (1 + interest_rate / compounding_frequency) ** (compounding_frequency * years)
+        total_amount = principal * (1 + interest_rate / compounding_frequency) ** (compounding_frequency * years) 
+        # calculate the total interest earned
+        total_interest = total_amount - principal
+        print(f"Total amount after {years} years: R{total_amount:.2f}")
+        print(f"Total interest earned: R{total_interest:.2f}")  
     
-    # calculate the total interest earned
-    total_interest = total_amount - principal
-    
-    print(f"Total amount after {years} years: R{total_amount:.2f}")
-    print(f"Total interest earned: R{total_interest:.2f}")
-    
+    # ask user if they want to do another calculation
+        another_calculation = input("Do you want to do another calculation? (yes/no): ").lower()
+        if another_calculation == "yes":
+            # use a loop to move the user back to the start of the program
+            print("Restarting the Finance Calculator...")
+            # restart the program by calling the script again
+            import finance_calculators  # assuming this script is named finance_calculators.py 
+
     # if the user enters anything else, print an error message
-    
-    
-# else if the user types bond or Bond or BOND run the bond calculator
+    else:
+        print("Invalid choice for interest type. Please enter either 'simple' or 'compound'.")
+        # use a loop to move the user back to the start of the program
+        print("Restarting the Finance Calculator...")
+        # restart the program by calling the script again
+        import finance_calculators  # assuming this script is named finance_calculators.py 
+
+  # else if the user types bond or Bond or BOND run the bond calculator
+
 elif choice.lower() == "bond":
+    
     # ask user to input the present value of the house, annual interest rate, and number of months
     present_value = float(input("Please enter the present value of the house (in Rands): "))
     annual_interest_rate = float(input("Please enter the annual interest rate (as a percentage): ")) / 100
@@ -48,8 +68,20 @@ elif choice.lower() == "bond":
     # calculate the monthly repayment using the formula M = P[r(1 + r)^n] / [(1 + r)^n – 1]
     monthly_repayment = (present_value * monthly_interest_rate * (1 + monthly_interest_rate) ** months) / \
                         ((1 + monthly_interest_rate) ** months - 1)
-    
     print(f"Monthly repayment for the bond: R{monthly_repayment:.2f}")
+
+    # ask user if they want to do another calculation
+    another_calculation = input("Do you want to do another calculation? (yes/no): ").lower()
+    if another_calculation == "yes":
+            # use a loop to move the user back to the start of the program
+            print("Restarting the Finance Calculator...")
+            # restart the program by calling the script again
+            import finance_calculators  # assuming this script is named finance_calculators.py 
+
 # if the user types anything else, print an error message
 else:
     print("Invalid choice. Please enter either 'investment' or 'bond'.")
+    # use a loop to move the user back to the start of the program
+    print("Restarting the Finance Calculator...")
+    # restart the program by calling the script again
+    import finance_calculators  # assuming this script is named finance_calculators.py 
