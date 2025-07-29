@@ -9,7 +9,7 @@ with open('DOB.txt', 'r') as file:
             print(parts[0], parts[1])
     # read through each line in the file
 with open('DOB.txt', 'r') as file: 
-    print("\nBirthdates:")  
+    print("\nBirthdate:")  
     for line in file:
         # print only the dates of birth - the last three words in each line
         parts = line.split()
