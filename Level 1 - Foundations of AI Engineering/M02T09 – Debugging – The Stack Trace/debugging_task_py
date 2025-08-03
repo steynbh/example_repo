@@ -1,0 +1,33 @@
+# Function to print dictionary values given the keys
+def print_values_of(dictionary, keys):
+     for k, v in dictionary.items():
+        if k == keys:
+            print(v)
+            return  
+  
+# Print dictionary values from simpson_catch_phrases
+simpson_catch_phrases = {"lisa": "BAAAAAART!", 
+                         "bart": "Eat My Shorts!", 
+                         "marge": "Mmm~mmmmm", 
+                         "homer": "d'oh!", 
+                         "maggie": "(Pacifier Suck)"
+                         }
+
+print_values_of(simpson_catch_phrases, 'lisa')
+print_values_of(simpson_catch_phrases, 'bart')
+print_values_of(simpson_catch_phrases, 'homer')
+
+
+
+'''
+    Expected console output:
+
+    BAAAAAART!
+    Eat My Shorts!
+    d'oh!
+
+'''
+
+
+
+
