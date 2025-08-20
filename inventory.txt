@@ -1,0 +1,2 @@
+Country,Code,Product,Cost,Quantity
+USA,SH021,Nike,140.0,55

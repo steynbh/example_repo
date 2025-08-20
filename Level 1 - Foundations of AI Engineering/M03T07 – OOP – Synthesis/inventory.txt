@@ -1,0 +1,20 @@
+USA,SH001,Nike Air Max mens size 10,120.00,50
+USA,SH002,Nike Air Max mens size 11,120.00,40
+USA,SH003,Nike Air Max mens size 12,120.00,30
+USA,SH004,Nike Air Max mens size 9,120.00,10
+USA,SH005,Nike Air Max woman size 4,100.00,60
+USA,SH006,Nike Air Max woman size 5,100.00,20
+USA,SH007,Nike Air Max woman size 6,100.00,30
+USA,SH008,Nike Air Max woman size 7,100.00,10
+USA,SH009,Nike Pegasus mens size 10,150.00,5
+USA,SH010,Nike Pegasus mens size 11,150.00,30
+USA,SH011,Nike Pegasus mens size 12,150.00,25
+USA,SH012,Nike Pegasus mens size 9,150.00,0
+UK,SH013,Nike Zoom woman size 4,110.00,20
+UK,SH014,Nike Zoom woman size 5,110.00,2
+UK,SH015,Nike Zoom woman size 6,110.00,25
+UK,SH016,Nike Zoom woman size 7,110.00,45
+Malaysia,SH017, Nike Zoom Fly mens size 10,200.00,5
+Malaysia,SH018, Nike Zoom Fly mens size 11,200.00,15
+Malaysia,SH019, Nike Zoom Fly mens size 12,200.00,55
+Malaysia,SH020, Nike Zoom Fly mens size 9,200.00,25
