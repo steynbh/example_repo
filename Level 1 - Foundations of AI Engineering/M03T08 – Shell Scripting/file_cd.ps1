@@ -11,4 +11,3 @@ mkdir Subfolder2
 mkdir Subfolder3
 Remove-Item Subfolder2
 Remove-Item Subfolder3
-0

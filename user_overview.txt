@@ -1,0 +1,4 @@
+Total users registered: 5
+Total tasks: 6
+
+User: RinaTotal tasks assigned: 1Percentage of total tasks assigned: 16.67%Percentage of tasks completed: 0.00%Percentage of tasks to be completed: 100.00%Percentage of tasks overdue: 0.00%
