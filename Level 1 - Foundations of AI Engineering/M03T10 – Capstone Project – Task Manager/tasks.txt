@@ -1,6 +1,9 @@
 admin, Register Users with task_manager.py, Use task_manager.py to add the usernames and passwords for all team members that will be using this program., 2019-10-10, 2019-10-20, Yes
-admin, Assign initial tasks, Use task_manager.py to assign each team member with appropriate tasks, 2019-10-10, 2025-10-01, No
+admin, Assign initial tasks, Use task_manager.py to assign each team member with appropriate tasks, 2019-10-10, 2025-10-01, Yes
 admin, filing, file admin, 2025-09-06, 2025-11-01, No
 Hendrik, Filing1, More filing, 2025-09-06, 2025-10-11, No
 Hendrik, finish assignment, finish assignment for project, 2025-09-06, 2025-10-01, No
 Rina, Article, write article, 2025-09-06, 2026-01-30, No
+Rina, Dphil, finish D, 2025-09-08, 2027-10-10, No
+Hendrik, finish bootcamp, complete all tasks, 2025-09-08, 2026-06-30, No
+Hendrik, Presentation, work on presentation, 2025-09-08, 2025-10-20, No

@@ -1,0 +1,6 @@
+Total tasks: 9
+Completed tasks: 1
+Incomplete tasks: 8
+Overdue tasks: 0
+Percentage of incomplete tasks: 88.89%
+Percentage of overdue tasks: 0.00%

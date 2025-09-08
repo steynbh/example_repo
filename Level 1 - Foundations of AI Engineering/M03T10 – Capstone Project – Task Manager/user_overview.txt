@@ -1,0 +1,38 @@
+Total users registered: 5
+Total tasks: 9
+
+User: admin
+Total tasks assigned: 3
+Percentage of total tasks assigned: 33.33%
+Percentage of tasks completed: 66.67%
+Percentage of tasks to be completed: 33.33%
+Percentage of tasks overdue: 0.00%
+
+User: Hendrik
+Total tasks assigned: 4
+Percentage of total tasks assigned: 44.44%
+Percentage of tasks completed: 0.00%
+Percentage of tasks to be completed: 100.00%
+Percentage of tasks overdue: 0.00%
+
+User: Rina
+Total tasks assigned: 2
+Percentage of total tasks assigned: 22.22%
+Percentage of tasks completed: 0.00%
+Percentage of tasks to be completed: 100.00%
+Percentage of tasks overdue: 0.00%
+
+User: Anri
+Total tasks assigned: 0
+Percentage of total tasks assigned: 0.00%
+Percentage of tasks completed: 0.00%
+Percentage of tasks to be completed: 0.00%
+Percentage of tasks overdue: 0.00%
+
+User: Piet
+Total tasks assigned: 0
+Percentage of total tasks assigned: 0.00%
+Percentage of tasks completed: 0.00%
+Percentage of tasks to be completed: 0.00%
+Percentage of tasks overdue: 0.00%
+
