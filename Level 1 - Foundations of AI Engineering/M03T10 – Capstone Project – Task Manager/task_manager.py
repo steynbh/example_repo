@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 
+
 # function to register a new user
 def reg_user():
     new_username = input("Enter a new username: ")
@@ -16,17 +17,18 @@ def reg_user():
         new_password = input("Enter a new password: ")
         confirm_password = input("Confirm the new password: ")
         if new_password == confirm_password:
-           try:
+            try:
                 with open(file_path, 'a') as user_file:
                     user_file.write(f"\n{new_username}, {new_password}\n")
                     print("User registered successfully.")
-           except Exception as e:
-                       print(f"An error occurred: {e}")
+            except Exception as e:
+                print(f"An error occurred: {e}")
         else:
-                    print("Passwords do not match. User not registered.")
+            print("Passwords do not match. User not registered.")
     except FileNotFoundError:
         print("The user.txt file was not found.")
     return
+
 
 # function to add a new task
 def add_task():
@@ -56,6 +58,7 @@ def add_task():
         print("The user.txt file was not found.") 
     return
 
+
 # function to view all tasks
 def view_all():
     list_length = 0
@@ -71,10 +74,10 @@ def view_all():
                     break
                 else:
                     for task in tasks:
-                            list_loops += 1
-                            print(f"Listing task {list_loops} of {list_length}")
-                            assigned_to, task_title, task_description, assigned_date, due_date, task_completed = task.strip().split(', ')
-                            print(f"Task: {task_title}\nAssigned to: {assigned_to}\nDate Assigned: {assigned_date}\nDue Date: {due_date}\nTask Description: {task_description}\nTask Completed: {task_completed}\n")
+                        list_loops += 1
+                        print(f"Listing task {list_loops} of {list_length}")
+                        assigned_to, task_title, task_description, assigned_date, due_date, task_completed = task.strip().split(', ')
+                        print(f"Task: {task_title}\nAssigned to: {assigned_to}\nDate Assigned: {assigned_date}\nDue Date: {due_date}\nTask Description: {task_description}\nTask Completed: {task_completed}\n")
                     break
         except FileNotFoundError:
             print("The tasks.txt file was not found.")
@@ -82,6 +85,7 @@ def view_all():
             print(f"An error occurred: {e}")
         break
     return
+
 
 # function to view tasks assigned to the logged-in user    
 def view_mine():
@@ -158,6 +162,7 @@ def view_mine():
         break  
     return
 
+
 # function to view completed tasks    
 def view_completed():
     list_length = 0
@@ -186,6 +191,7 @@ def view_completed():
             print(f"An error occurred: {e}")
         break
     return
+
 
 # function to delete a task     
 def delete_task():
@@ -216,6 +222,7 @@ def delete_task():
         print(f"An error occurred: {e}")    
     return
 
+
 # function to generate user statistics report
 def generate_statistics():
     try:
@@ -227,12 +234,15 @@ def generate_statistics():
     except FileNotFoundError:
         print("The user.txt file was not found.")
         return
+
+
 # For each user, also describe: 
 # 1. The total number of tasks assigned t0o that user. 
 # 2. The percentage of the total number of tasks that have been assigned to that user 
 # 3. The percentage of the tasks assigned to that user that have been completed 
 # 4. The percentage of the tasks assigned to that user that must still be completed 
 # 5. The percentage of the tasks assigned to that user that have not yet been completed and are overdue
+
     try:
         with open(file_path1, 'r') as task_file:
             tasks = task_file.readlines()
@@ -264,6 +274,7 @@ def generate_statistics():
     except FileNotFoundError:
         print("The user.txt file was not found.")
 
+
 # function to display user statistics report    
 def display_statistics():
     try:
@@ -272,6 +283,7 @@ def display_statistics():
             print(statistics)
     except FileNotFoundError:
         print("The user_overview.txt file was not found. Please generate the reports first.")
+
 
 # function to generate task report
 def generate_task_report():
@@ -294,6 +306,7 @@ def generate_task_report():
             print("Task report generated successfully.")
     except FileNotFoundError:
         print("The tasks.txt file was not found.")
+
 
 # function to display task report
 def display_task_report():
@@ -338,22 +351,36 @@ while True:
         print("Invalid username. Please try again.")
     input_username = input("Enter your username: ")
     input_password = input("Enter your password: ")
+
+
 # if username is admin, show the admin menu. Otherwise, show the user menu.
-# The admin user should be able to register a new user, add a task, view all tasks, view their own tasks, view completed tasks, delete tasks or exit the program.
+# The admin user should be able to 
+# register a new user, 
+# add a task, 
+# view all tasks, 
+# view their own tasks, 
+# view completed tasks, 
+# delete tasks or exit the program.
+
 if input_username == 'admin':
     print("Welcome, admin! You have access to the admin menu.")
 else:
     print(f"Welcome, {input_username}! You have access to the user menu.")
 
+
 #After a successful login, the user is presented with a menu of options to choose from. 
 # The user should be able to repeatedly choose options from the menu until they choose to exit the program. 
-# The following menu should be displayed once the user has successfully logged in: "Select one of the following options": r - register a user, a - add task, va - view all tasks, vm - view my tasks, e - exit
-# The user should be able to choose an option by entering the letter associated with the relevant option in the menu. The program should respond appropriately to the user's menu selection.
-# The program should be case insensitive to the user's menu selection. For example, if the user enters 'A' or 'a', the program should respond appropriately to the user's menu selection.
+# The following menu should be displayed once the user has successfully logged in: 
+# "Select one of the following options": r - register a user, a - add task, va - view all tasks, vm - view my tasks, e - exit
+# The user should be able to choose an option by entering the letter associated with the relevant option in the menu. 
+# The program should respond appropriately to the user's menu selection.
+# The program should be case insensitive to the user's menu selection. 
+# For example, if the user enters 'A' or 'a', the program should respond appropriately to the user's menu selection.
 # If the user enters any letter other than the letters specified in the menu, an appropriate error message should be displayed.
 # The program should then re-display the menu and prompt the user to make another selection.
 # The program should only exit when the user selects the 'e' option from the menu.
-# The program should respond appropriately to the user's menu selection as follows:
+# The program should respond appropriately to the user's menu selection
+
 while True:
     if input_username == 'admin':
         menu = input("Select one of the following options:\n"
