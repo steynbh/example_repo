@@ -237,7 +237,7 @@ def generate_statistics():
 
 
 # For each user, also describe: 
-# 1. The total number of tasks assigned t0o that user. 
+# 1. The total number of tasks assigned to that user. 
 # 2. The percentage of the total number of tasks that have been assigned to that user 
 # 3. The percentage of the tasks assigned to that user that have been completed 
 # 4. The percentage of the tasks assigned to that user that must still be completed 
@@ -367,7 +367,6 @@ if input_username == 'admin':
 else:
     print(f"Welcome, {input_username}! You have access to the user menu.")
 
-
 #After a successful login, the user is presented with a menu of options to choose from. 
 # The user should be able to repeatedly choose options from the menu until they choose to exit the program. 
 # The following menu should be displayed once the user has successfully logged in: 
@@ -475,4 +474,5 @@ while True:
                         print("Invalid input. Please enter 'yes' or 'no'.")
                         input_exit = input("Do you want to login as another user? (yes/no): ").lower()
                     break
-                # end of program
+
+# end of program
