@@ -73,8 +73,9 @@ cursor.execute('''SELECT * FROM python_programming''')
 contents = cursor.fetchall()  # Fetch all results from the executed SQL command
 for content in contents:
     print(content)  # Print each record
-
+    print()
 db.commit()
 
 # Close the database connection
 db.close()
+
