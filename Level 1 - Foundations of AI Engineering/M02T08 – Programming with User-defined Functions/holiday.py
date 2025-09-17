@@ -44,3 +44,4 @@ def holiday_cost(hotel_total, car_rental_total, plane_cost_total):
 total_cost = holiday_cost(hotel_total_cost, car_rental_total, plane_cost_total)
 #print a message to the user with the total cost of the trip
 print(f"The total cost of your trip to {city_flight} is: R{total_cost}")
+print()
